@@ -20,7 +20,7 @@ class Tile extends Component {
 		super(props);
 	}
 	render(){
-		const {border,className,clsPrefix,children,size, ...others} = this.props;
+		const {border,className,clsPrefix,children, ...others} = this.props;
 		let classes = {};
 		if(border) {
 			classes[`${clsPrefix}-bordered`] = true;
