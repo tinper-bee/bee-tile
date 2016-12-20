@@ -46,14 +46,12 @@ var Tile = function (_Component) {
 	}
 
 	Tile.prototype.render = function render() {
-		var _props = this.props;
-		var border = _props.border;
-		var className = _props.className;
-		var clsPrefix = _props.clsPrefix;
-		var children = _props.children;
-		var size = _props.size;
-
-		var others = _objectWithoutProperties(_props, ['border', 'className', 'clsPrefix', 'children', 'size']);
+		var _props = this.props,
+		    border = _props.border,
+		    className = _props.className,
+		    clsPrefix = _props.clsPrefix,
+		    children = _props.children,
+		    others = _objectWithoutProperties(_props, ['border', 'className', 'clsPrefix', 'children']);
 
 		var classes = {};
 		if (border) {
