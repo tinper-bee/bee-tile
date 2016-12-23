@@ -3,6 +3,7 @@ import classnames from 'classnames';
 
 const propTypes = {
 	border: PropTypes.bool,
+	hoverColors: PropTypes.oneOf(['primary', 'success', 'info', 'warning', 'danger']),
 	className: PropTypes.string,
 	children: PropTypes.oneOfType([
 				PropTypes.element,
@@ -20,10 +21,13 @@ class Tile extends Component {
 		super(props);
 	}
 	render(){
-		const {border,className,clsPrefix,children, ...others} = this.props;
+		const {border,className,clsPrefix,children,hoverColors, ...others} = this.props;
 		let classes = {};
 		if(border) {
 			classes[`${clsPrefix}-bordered`] = true;
+		}
+		if(hoverColors) {
+			classes[`${clsPrefix}-hover-${hoverColors}`] = true;
 		}
 		let classNames = classnames(clsPrefix,classes);
 		return(<div {...others} className={classnames(className,classNames)}>{children}</div> )
