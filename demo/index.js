@@ -15,42 +15,20 @@ const CARETUP = <i className="uf uf-chevronarrowup"></i>;
 /**
 *
 * @title Tile实例
-* @description 通过style自定力样式，Tile的children均可自定义。
+* @description 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁铁hover的效果
 *
 */
 class Demo1 extends Component {
 	render () {
 		return (
-			<div>
-			<Tile hoverColors="primary" style={{width:200}}>
-				<h4>磁铁标题</h4>
-				<span>进度</span>
-				<h1>95%</h1>
-			</Tile>
-			<Tile hoverColors="danger" style={{width:200}}>
-				<h4>磁铁标题</h4>
-				<span>进度</span>
-				<h1>95%</h1>
-			</Tile>
-			<Tile hoverColors="warning" style={{width:200}}>
-				<h4>磁铁标题</h4>
-				<span>进度</span>
-				<h1>95%</h1>
-			</Tile>
-			<Tile hoverColors="success" style={{width:200}}>
-				<h4>磁铁标题</h4>
-				<span>进度</span>
-				<h1>95%</h1>
-			</Tile>
 			<Tile hoverColors="info" style={{width:200}}>
 				<h4>磁铁标题</h4>
 				<span>进度</span>
 				<h1>95%</h1>
 			</Tile>
-			</div>
 		)	
 	}
-}var DemoArray = [{"example":<Demo1 />,"title":" Tile实例","code":"/**\n*\n* @title Tile实例\n* @description 通过style自定力样式，Tile的children均可自定义。\n*\n*/\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t<Tile hoverColors=\"primary\" style={{width:200}}>\n\t\t\t\t<h4>磁铁标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t\t<Tile hoverColors=\"danger\" style={{width:200}}>\n\t\t\t\t<h4>磁铁标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t\t<Tile hoverColors=\"warning\" style={{width:200}}>\n\t\t\t\t<h4>磁铁标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t\t<Tile hoverColors=\"success\" style={{width:200}}>\n\t\t\t\t<h4>磁铁标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t\t<Tile hoverColors=\"info\" style={{width:200}}>\n\t\t\t\t<h4>磁铁标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t\t</div>\n\t\t)\t\n\t}\n}","desc":" 通过style自定力样式，Tile的children均可自定义。"}]
+}var DemoArray = [{"example":<Demo1 />,"title":" Tile实例","code":"/**\n*\n* @title Tile实例\n* @description 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁铁hover的效果\n*\n*/\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Tile hoverColors=\"info\" style={{width:200}}>\n\t\t\t\t<h4>磁铁标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t)\t\n\t}\n}","desc":" 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁铁hover的效果"}]
 
 
 class Demo extends Component {

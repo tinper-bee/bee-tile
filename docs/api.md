@@ -8,3 +8,4 @@
 |className|增加额外的class|string|''|
 |border|是否带边框|bool|true|
 |children|自定义子内容|object/string/node|-|
+|hoverColors|设置hover的样式 oneOf:primary,info,warning,danger,success|strng|-|
