@@ -28,6 +28,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var propTypes = {
 	border: _react.PropTypes.bool,
+	hoverColors: _react.PropTypes.oneOf(['primary', 'success', 'info', 'warning', 'danger']),
 	className: _react.PropTypes.string,
 	children: _react.PropTypes.oneOfType([_react.PropTypes.element, _react.PropTypes.object, _react.PropTypes.node])
 };
@@ -51,11 +52,15 @@ var Tile = function (_Component) {
 		    className = _props.className,
 		    clsPrefix = _props.clsPrefix,
 		    children = _props.children,
-		    others = _objectWithoutProperties(_props, ['border', 'className', 'clsPrefix', 'children']);
+		    hoverColors = _props.hoverColors,
+		    others = _objectWithoutProperties(_props, ['border', 'className', 'clsPrefix', 'children', 'hoverColors']);
 
 		var classes = {};
 		if (border) {
 			classes[clsPrefix + '-bordered'] = true;
+		}
+		if (hoverColors) {
+			classes[clsPrefix + '-hover-' + hoverColors] = true;
 		}
 		var classNames = (0, _classnames2["default"])(clsPrefix, classes);
 		return _react2["default"].createElement(
