@@ -22,13 +22,13 @@ class Demo1 extends Component {
 	render () {
 		return (
 			<Tile style={{width:200}}>
-				<h4>项目跟踪</h4>
+				<h4>磁铁标题</h4>
 				<span>进度</span>
 				<h1>95%</h1>
 			</Tile>
 		)	
 	}
-}var DemoArray = [{"example":<Demo1 />,"title":" Tile实例","code":"/**\n*\n* @title Tile实例\n* @description 通过style自定力样式，Tile的children均可自定义。\n*\n*/\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Tile style={{width:200}}>\n\t\t\t\t<h4>项目跟踪</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t)\t\n\t}\n}","desc":" 通过style自定力样式，Tile的children均可自定义。"}]
+}var DemoArray = [{"example":<Demo1 />,"title":" Tile实例","code":"/**\n*\n* @title Tile实例\n* @description 通过style自定力样式，Tile的children均可自定义。\n*\n*/\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Tile style={{width:200}}>\n\t\t\t\t<h4>磁铁标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t)\t\n\t}\n}","desc":" 通过style自定力样式，Tile的children均可自定义。"}]
 
 
 class Demo extends Component {

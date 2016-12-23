@@ -8,7 +8,7 @@ class Demo1 extends Component {
 	render () {
 		return (
 			<Tile style={{width:200}}>
-				<h4>项目跟踪</h4>
+				<h4>磁铁标题</h4>
 				<span>进度</span>
 				<h1>95%</h1>
 			</Tile>
