@@ -13,7 +13,8 @@ const propTypes = {
 };
 const defaultProps = {
 	clsPrefix: 'u-tile',
-	border: true
+	border: true,
+	Component: 'div'
 };
 
 class Tile extends Component {
@@ -21,7 +22,7 @@ class Tile extends Component {
 		super(props);
 	}
 	render(){
-		const {border,className,clsPrefix,children,hoverColors, ...others} = this.props;
+		const {Component,border,className,clsPrefix,children,hoverColors, ...others} = this.props;
 		let classes = {};
 		if(border) {
 			classes[`${clsPrefix}-bordered`] = true;
@@ -30,7 +31,7 @@ class Tile extends Component {
 			classes[`${clsPrefix}-hover-${hoverColors}`] = true;
 		}
 		let classNames = classnames(clsPrefix,classes);
-		return(<div {...others} className={classnames(className,classNames)}>{children}</div> )
+		return(<Component {...others} className={classnames(className,classNames)}>{children}</Component> )
 	}
 };
 Tile.propTypes = propTypes;
