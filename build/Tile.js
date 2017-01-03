@@ -34,7 +34,8 @@ var propTypes = {
 };
 var defaultProps = {
 	clsPrefix: 'u-tile',
-	border: true
+	border: true,
+	Component: 'div'
 };
 
 var Tile = function (_Component) {
@@ -48,12 +49,13 @@ var Tile = function (_Component) {
 
 	Tile.prototype.render = function render() {
 		var _props = this.props,
+		    Component = _props.Component,
 		    border = _props.border,
 		    className = _props.className,
 		    clsPrefix = _props.clsPrefix,
 		    children = _props.children,
 		    hoverColors = _props.hoverColors,
-		    others = _objectWithoutProperties(_props, ['border', 'className', 'clsPrefix', 'children', 'hoverColors']);
+		    others = _objectWithoutProperties(_props, ['Component', 'border', 'className', 'clsPrefix', 'children', 'hoverColors']);
 
 		var classes = {};
 		if (border) {
@@ -64,7 +66,7 @@ var Tile = function (_Component) {
 		}
 		var classNames = (0, _classnames2["default"])(clsPrefix, classes);
 		return _react2["default"].createElement(
-			'div',
+			Component,
 			_extends({}, others, { className: (0, _classnames2["default"])(className, classNames) }),
 			children
 		);
