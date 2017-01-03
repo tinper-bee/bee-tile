@@ -7,11 +7,13 @@
 class Demo1 extends Component {
 	render () {
 		return (
-			<Tile hoverColors="info" style={{width:200}}>
-				<h4>磁铁标题</h4>
+			<div>
+			<Tile style={{width:200}}>
+				<h4>磁贴标题</h4>
 				<span>进度</span>
 				<h1>95%</h1>
 			</Tile>
+			</div>
 		)	
 	}
 }

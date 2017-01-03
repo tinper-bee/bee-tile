@@ -1,51 +1,52 @@
 {
- "name": "bee-tile",
- "version": "0.0.5",
- "description": "Tile ui component for react",
- "keywords": [
-  "react",
-  "react-component",
-  "bee-tile",
-  "iuap-design",
-  "tinper-bee",
-  "Tile"
- ],
- "engines": {
-  "node": ">=4.0.0"
- },
- "homepage": "https://github.com/tinper-bee/bee-tile.git",
- "author": "Yonyou FED",
- "repository": "http://github.com/tinper-bee/bee-tile",
- "bugs": "https://github.com/tinper-bee/bee-tile.git/issues",
- "license": "MIT",
- "main": "./build/index.js",
- "config": {
-  "port": 3000
- },
- "scripts": {
-  "dev": "bee-tools run start",
-  "build": "bee-tools run build",
-  "lint": "bee-tools run lint",
-  "test": "bee-tools run test",
-  "chrome": "bee-tools run chrome",
-  "coveralls": "bee-tools run coverage",
-  "browsers": "bee-tools run browsers",
-  "pub": "bee-tools run pub"
- },
- "dependencies": {
-  "classnames": "^2.2.5",
-  "tinper-bee-core": "latest"
- },
- "devDependencies": {
-  "chai": "^3.5.0",
-  "enzyme": "^2.4.1",
-  "react": "~0.14.0",
-  "react-addons-test-utils": "15.3.2",
-  "react-dom": "~0.14.0",
-  "console-polyfill": "~0.2.1",
-  "es5-shim": "~4.1.10",
-  "bee-panel": "latest",
-  "bee-layout": "latest",
-  "bee-button": "latest"
- }
+  "name": "bee-tile",
+  "version": "0.0.5",
+  "description": "Tile ui component for react",
+  "keywords": [
+    "react",
+    "react-component",
+    "bee-tile",
+    "iuap-design",
+    "tinper-bee",
+    "Tile"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/tinper-bee/bee-tile.git",
+  "author": "Yonyou FED",
+  "repository": "http://github.com/tinper-bee/bee-tile",
+  "bugs": "https://github.com/tinper-bee/bee-tile.git/issues",
+  "license": "MIT",
+  "main": "./build/index.js",
+  "config": {
+    "port": 3000
+  },
+  "scripts": {
+    "dev": "bee-tools run start",
+    "build": "bee-tools run build",
+    "lint": "bee-tools run lint",
+    "test": "bee-tools run test",
+    "chrome": "bee-tools run chrome",
+    "coveralls": "bee-tools run coverage",
+    "browsers": "bee-tools run browsers",
+    "pub": "bee-tools run pub"
+  },
+  "dependencies": {
+    "bee-button": "^0.2.2",
+    "classnames": "^2.2.5",
+    "tinper-bee-core": "latest"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "enzyme": "^2.4.1",
+    "react": "~0.14.0",
+    "react-addons-test-utils": "15.3.2",
+    "react-dom": "~0.14.0",
+    "console-polyfill": "~0.2.1",
+    "es5-shim": "~4.1.10",
+    "bee-panel": "latest",
+    "bee-layout": "latest",
+    "bee-button": "latest"
+  }
 }
