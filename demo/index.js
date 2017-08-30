@@ -4,7 +4,6 @@ import { Panel } from 'bee-panel';
 import Button from 'bee-button';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Tile from '../src';
 
 
 const CARET = <i className="uf uf-arrow-down"></i>;
@@ -12,39 +11,7 @@ const CARET = <i className="uf uf-arrow-down"></i>;
 const CARETUP = <i className="uf uf-arrow-up"></i>;
 
 
-/**
-*
-* @title Tile实例
-* @description 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁铁hover的效果
-*
-*/
-class Demo1 extends Component {
-	render () {
-		return (
-			<Tile style={{width:200}}>
-				<h4>磁贴标题</h4>
-				<span>进度</span>
-				<h1>95%</h1>
-			</Tile>
-		)	
-	}
-}/**
-*
-* @title Tile 实例
-* @description 具备链接功能，设置参数Component为a,且设置href为你的链接地址
-*
-*/
-class Demo2 extends Component {
-	render () {
-		return (
-			<Tile Component="a" href="baidu" style={{width:200}}>
-				<h4>磁贴标题</h4>
-				<span>进度</span>
-				<h1>95%</h1>
-			</Tile>
-		)	
-	}
-}var DemoArray = [{"example":<Demo1 />,"title":" Tile实例","code":"/**\n*\n* @title Tile实例\n* @description 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁铁hover的效果\n*\n*/\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Tile style={{width:200}}>\n\t\t\t\t<h4>磁贴标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t)\t\n\t}\n}","desc":" 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁铁hover的效果"},{"example":<Demo2 />,"title":" Tile 实例","code":"/**\n*\n* @title Tile 实例\n* @description 具备链接功能，设置参数Component为a,且设置href为你的链接地址\n*\n*/\nclass Demo2 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Tile Component=\"a\" href=\"baidu\" style={{width:200}}>\n\t\t\t\t<h4>磁贴标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t)\t\n\t}\n}","desc":" 具备链接功能，设置参数Component为a,且设置href为你的链接地址"}]
+var Demo1 = require("./demolist/Demo1");var Demo2 = require("./demolist/Demo2");var DemoArray = [{"example":<Demo1 />,"title":" Tile实例","code":"/**\n*\n* @title Tile实例\n* @description 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁贴hover的效果\n*\n*/\n\nimport React, { Component } from 'react';\nimport Tile from 'tinper-bee';\n\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Tile style={{width:200}}>\n\t\t\t\t<h4>磁贴标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t)\t\n\t}\n}\n\n\n","desc":" 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁贴hover的效果"},{"example":<Demo2 />,"title":" Tile 实例","code":"/**\n*\n* @title Tile 实例\n* @description 具备链接功能，设置参数Component为a,且设置href为你的链接地址\n*\n*/\n\nimport React, { Component } from 'react';\nimport Tile from 'tinper-bee';\n\nclass Demo2 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<Tile Component=\"a\" href=\"baidu\" style={{width:200}}>\n\t\t\t\t<h4>磁贴标题</h4>\n\t\t\t\t<span>进度</span>\n\t\t\t\t<h1>95%</h1>\n\t\t\t</Tile>\n\t\t)\t\n\t}\n}\n\n","desc":" 具备链接功能，设置参数Component为a,且设置href为你的链接地址"}]
 
 
 class Demo extends Component {

@@ -4,6 +4,10 @@
 * @description 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁贴hover的效果
 *
 */
+
+import React, { Component } from 'react';
+import Tile from '../../src';
+
 class Demo1 extends Component {
 	render () {
 		return (
@@ -15,3 +19,6 @@ class Demo1 extends Component {
 		)	
 	}
 }
+
+
+export default Demo1;

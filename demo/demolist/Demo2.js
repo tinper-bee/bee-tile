@@ -4,6 +4,10 @@
 * @description 具备链接功能，设置参数Component为a,且设置href为你的链接地址
 *
 */
+
+import React, { Component } from 'react';
+import Tile from '../../src';
+
 class Demo2 extends Component {
 	render () {
 		return (
@@ -15,3 +19,5 @@ class Demo2 extends Component {
 		)	
 	}
 }
+
+export default Demo2;
