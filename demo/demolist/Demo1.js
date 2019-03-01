@@ -1,7 +1,7 @@
 /**
 *
 * @title Tile实例
-* @description 通过style自定力样式，Tile的children均可自定义。hoverColors设置磁贴hover的效果
+* @description 通过style自定义样式，Tile的children均可自定义。hoverColors设置磁贴hover的效果
 *
 */
 
